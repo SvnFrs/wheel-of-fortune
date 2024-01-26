@@ -20,8 +20,11 @@ function spinWheel() {
     for (const item of items) {
         currentPercent += item.percent;
         if (randomNumber <= currentPercent) {
+            // Check if the item is 'Banh Trang' and switch it to 'Trung Ga Luoc'
+            const winningItem = item.name === 'Banh Trang' ? 'Trung Ga Luoc' : item.name;
+            
             // Display or use the winning item as needed
-            console.log('Congratulations! You won:', item.name);
+            console.log('Congratulations! You won:', winningItem);
             break;
         }
     }
