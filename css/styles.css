@@ -3,6 +3,30 @@
     color: #fff;
 }
 
+body {
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.mai1 {
+    position: absolute;
+    height: 10rem;
+    object-fit: contain;
+    top: 52rem;
+    left: 0rem;
+}
+
+.mai2 {
+    position: absolute;
+    height: 10rem;
+    object-fit: contain;
+    top: 52rem;
+    left: 105rem;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .d-flex {
     display: flex;
 }
@@ -50,15 +74,24 @@
     left: 6vw;
     
 }
-.play-button > button {
+#spin {
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
     background-color: #fff;
     border: none;
     border-radius: 40px;
-    
-    /* box-shadow: 0 0 10px 5px #13072e; */
     height: 5rem;
     width: 20rem;
 }
+
+#spin:hover {
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 .play-button > button > h1 {
     color: #13072e;
     font-weight: bolder;
