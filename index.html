@@ -24,32 +24,16 @@
             <img src="img/mascot.png" alt="mascot" />
           </div>
           <div class="play-button">
-            <button id="spin"><h1>QUAY DI CHO CHI</h1></button>
+            <button id="spin" onclick="spin()"><h1>QUAY DI CHO CHI</h1></button>
           </div>
         </div>
         <div class="wheel-zone">
           <!-- <input type="button" value="spin" style="float:left;" id='spin' /> -->
           <!-- <canvas id="canvas" width="500" height="500"></canvas> -->
-          <div class="banhtrang1">banh trang</div>
-          <div class="banhtrang2">banh trang</div>
-          <div class="nuocsam1">nuoc sam</div>
-          <div class="nuocsam2">nuoc sam</div>
-          <div class="trunggaluoc1">trung ga luoc</div>
-          <div class="trunggaluoc2">trung ga luoc</div>
-          <div class="trungcutluoc1">trung cut luoc</div>
-          <div class="trungcutluoc2">trung cut luoc</div>
-          <div class="trungcutluoc3">trung cut luoc</div>
-          <div class="trungcutluoc4">trung cut luoc</div>
-          <div class="sticker1">sticker</div>
-          <div class="sticker2">sticker</div>
-          <div class="sticker3">sticker</div>
-          <div class="chucbanmaymanlansau1">Chuc ban may man lan sau</div>
-          <div class="chucbanmaymanlansau2">Chuc ban may man lan sau</div>
-          <div class="chucbanmaymanlansau3">Chuc ban may man lan sau</div>
-          <div class="chucbanmaymanlansau4">Chuc ban may man lan sau</div>
-          <div class="chucbanmaymanlansau5">Chuc ban may man lan sau</div>
-          <div class="chucbanmaymanlansau6">Chuc ban may man lan sau</div>
-          <div class="chucbanmaymanlansau7">Chuc ban may man lan sau</div>
+          <div id="chart"></div>
+          <div id="question"><h1></h1></div>
+
+          
 
              <!--
     
@@ -67,5 +51,6 @@
     <img src="img/mai.png" alt="" class="mai1" />
     <img src="img/mai.png" alt="" class="mai2" />
   </body>
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <script src="js/scripts.js"></script>
 </html>
