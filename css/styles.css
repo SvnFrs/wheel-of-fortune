@@ -22,7 +22,8 @@ body {
   height: 10rem;
   object-fit: contain;
   top: 52rem;
-  left: 105rem;
+  /* left: 105rem; */
+  right: 0;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -64,8 +65,10 @@ body {
 }
 
 .mascot > img {
+  /* position: absolute; */
   height: 80%;
   object-fit: contain;
+  /* left: 1vw; */
   /* vertical-align: middle; */
 }
 .play-button {
@@ -109,7 +112,8 @@ text {
   width: 600px;
   height: 600px;
   top: 200px;
-  left: 1000;
+  right: 10vw;
+  /* left: 50vw; */
 }
 #chart > svg {
     width: 600px;
@@ -123,6 +127,7 @@ text {
   left: 620px;
 }
 #question h1 {
+  color: beige;
   font-size: 50px;
   font-weight: bold;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -133,4 +138,8 @@ text {
   left: 10%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
+}
+
+@media (30em <= width <= 90rem) {
+  
 }
